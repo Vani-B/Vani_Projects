@@ -1,0 +1,649 @@
+{
+  "id": "e1370da2-7919-43bd-896b-2d13741b4a5f",
+  "version": "2.0",
+  "name": "OrangeHRM_Miniproject",
+  "url": "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login",
+  "tests": [{
+    "id": "97b75884-2c9c-49de-87cc-202d6df79819",
+    "name": "TC_Login+ve",
+    "commands": [{
+      "id": "f0e389b8-bb21-497c-ad24-b5128562248c",
+      "comment": "",
+      "command": "open",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "45907434-da04-4daf-b9c6-6c0f8eba181d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6e0c3fc8-e243-4251-8912-a971797fbb67",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "OrangeHRM",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1bf8a4a4-ff22-475b-b0f8-9a3844df97b8",
+      "comment": "",
+      "command": "//assertText",
+      "target": "type=paragraph",
+      "targets": [],
+      "value": "Username : Admin"
+    }, {
+      "id": "125f5cbe-a60b-48c1-8109-bf67ab77e5da",
+      "comment": "",
+      "command": "//assertText",
+      "target": "Password : admin123",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "58ab9eb4-6798-402d-97fe-68fbc11a402c",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c64e410e-8a10-47a2-8d6e-178b0ce6825a",
+      "comment": "Valid Username",
+      "command": "type",
+      "target": "name=username",
+      "targets": [],
+      "value": "Admin"
+    }, {
+      "id": "e7d6d28c-45b3-4dd2-ba38-8e8901d7ffbb",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "62ccba25-3e9a-4702-a0f7-624c8fd67a66",
+      "comment": "Valid Password",
+      "command": "type",
+      "target": "name=password",
+      "targets": [],
+      "value": "admin123"
+    }, {
+      "id": "2ff65d28-a408-471d-8030-dc8b6b23cbb8",
+      "comment": "Submit Button",
+      "command": "click",
+      "target": "xpath=/html/body/div[1]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fa9a558d-19ed-4a73-a596-3f8b229a0c31",
+      "comment": "Dropdown for Logout",
+      "command": "click",
+      "target": "xpath=/html/body/div[1]/div[1]/div[1]/header/div[1]/div[2]/ul/li/span/i",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2b9ff535-7a92-414a-b226-deaaa29928db",
+      "comment": "Logout",
+      "command": "click",
+      "target": "xpath=/html/body/div[1]/div[1]/div[1]/header/div[1]/div[2]/ul/li/ul/li[4]/a",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "a83944f9-25e5-466f-bd05-5e63c48f69bc",
+    "name": "TC_Login-ve",
+    "commands": [{
+      "id": "e3134126-f511-4cd6-a549-557a4cb5e56f",
+      "comment": "",
+      "command": "open",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4f851253-d30e-4026-b8da-608a4fdbc78e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "19bb85f1-1446-408d-bbb9-73c71c25ad9a",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8bb05f45-4052-4722-a1a6-3909be2aeea1",
+      "comment": "Invalid username",
+      "command": "type",
+      "target": "name=username",
+      "targets": [],
+      "value": "ADMIN"
+    }, {
+      "id": "9d180bbe-ca8d-46c5-80c6-58e56e1ef79d",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b49f8b29-df44-4a55-bdff-a8c48d905669",
+      "comment": "Invalid password",
+      "command": "type",
+      "target": "name=password",
+      "targets": [],
+      "value": "password"
+    }, {
+      "id": "cf0c168f-9ce0-41cd-8617-a763ca08bb4c",
+      "comment": "Submit",
+      "command": "click",
+      "target": "xpath=/html/body/div[1]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "50f07465-7d97-4587-89c7-12d3b658a33e",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5ad89172-98a9-4b0e-89d9-f228f6f44a41",
+      "comment": "Valid username",
+      "command": "type",
+      "target": "name=username",
+      "targets": [],
+      "value": "Admin"
+    }, {
+      "id": "bdfd25fe-49c0-4fca-be48-272a96a9994e",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c6209785-d50a-4000-8d1f-678d99352d3f",
+      "comment": "Invalid password",
+      "command": "type",
+      "target": "name=password",
+      "targets": [],
+      "value": "admin"
+    }, {
+      "id": "9e16151c-e359-47ac-8393-a0c886c022e4",
+      "comment": "Submit",
+      "command": "click",
+      "target": "xpath=/html/body/div[1]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "87cca50e-b548-4703-9c5a-ab32c90d469c",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a99456a3-1256-4be9-8755-31068af5cc87",
+      "comment": "Invalid username",
+      "command": "type",
+      "target": "name=username",
+      "targets": [],
+      "value": "ADMIN"
+    }, {
+      "id": "6d5f4a94-4743-49b1-953a-8d1c12851998",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e89211c8-9a78-4c0b-9889-86ceca3c571f",
+      "comment": "Valid password",
+      "command": "type",
+      "target": "name=password",
+      "targets": [],
+      "value": "admin123"
+    }, {
+      "id": "635cc446-8dec-4ed1-b851-82e8616b8f8b",
+      "comment": "Submit",
+      "command": "click",
+      "target": "xpath=/html/body/div[1]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "0f5cf1a5-2325-4d0a-a03e-5521d7568880",
+    "name": "TestCase3",
+    "commands": [{
+      "id": "654d6a59-b7d4-4095-b978-ef691e8aa1a2",
+      "comment": "",
+      "command": "open",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1bdc2b49-1f0a-4bbe-8a61-18c2de5d7eda",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1385x750",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "97bc2b69-decc-4e40-b123-1bc768e2f9b0",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "55609b21-ee25-4744-8f2e-a41749a7bc82",
+      "comment": "Valid username",
+      "command": "type",
+      "target": "name=username",
+      "targets": [],
+      "value": "Admin"
+    }, {
+      "id": "5264ad3a-05c5-4201-b5d7-626d55ec1530",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "89983f7f-b8dd-435f-ad56-db609c82c2c1",
+      "comment": "Valid password",
+      "command": "type",
+      "target": "name=password",
+      "targets": [],
+      "value": "admin123"
+    }, {
+      "id": "ce3f96de-68f7-492a-941f-8e8d150933a5",
+      "comment": "Submit",
+      "command": "click",
+      "target": "xpath=/html/body/div[1]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b5328f9c-4b27-4769-8bc0-d916a75d21e5",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=/html/body/div[1]/div[1]/div[2]/div[2]/div/div[1]/div/div[1]/div/p",
+      "targets": [],
+      "value": "Time at Work"
+    }, {
+      "id": "38a21d41-863e-4468-928b-c46e28aba717",
+      "comment": "Recruitment tab",
+      "command": "click",
+      "target": "xpath=/html/body/div[1]/div[1]/div[1]/aside/nav/div[2]/ul/li[5]/a/span",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b26eedb7-018e-4db1-aa2d-6188141b7f1b",
+      "comment": "Vacancies tab",
+      "command": "click",
+      "target": "xpath=/html/body/div[1]/div[1]/div[1]/header/div[2]/nav/ul/li[2]/a",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "01ca96eb-4dd7-4486-8e9c-405d61dbf333",
+      "comment": "",
+      "command": "executeScript",
+      "target": "window.scrollBy(0,800)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a87754fc-855f-4ff1-8dfa-d9e59a125149",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=/html/body/div[1]/div[1]/div[2]/div[2]/div/div[2]/div[3]/div/div[2]/div[4]/div/div[1]/div/div/label/span/i",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d4ed4a63-332c-43f8-bedd-c804e5f92f51",
+      "comment": "Select sales representive",
+      "command": "click",
+      "target": "xpath=/html/body/div[1]/div[1]/div[2]/div[2]/div/div[2]/div[3]/div/div[2]/div[1]/div/div[1]/div/div/label/span/i",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c98ef601-c0ee-4bdf-8a00-aaba6defc4cf",
+      "comment": "Select Senior QA Lead",
+      "command": "click",
+      "target": "xpath=/html/body/div[1]/div[1]/div[2]/div[2]/div/div[2]/div[3]/div/div[2]/div[5]/div/div[1]/div/div/label/span/i",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b6defb9e-29d4-4cd1-bb84-3aa503729a60",
+      "comment": "Adding vacancies",
+      "command": "click",
+      "target": "xpath=/html/body/div[1]/div[1]/div[2]/div[2]/div/div[2]/div[1]/button",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "06d63eb3-fc9e-461d-bd2c-4247ef614f44",
+      "comment": "Give vacancy name",
+      "command": "click",
+      "target": "xpath=/html/body/div[1]/div[1]/div[2]/div[2]/div/div/form/div[1]/div[1]/div/div[2]/input",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "64b9b327-69b9-4f00-98ce-92e8458cb27d",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=/html/body/div[1]/div[1]/div[2]/div[2]/div/div/form/div[1]/div[1]/div/div[2]/input",
+      "targets": [],
+      "value": " QA Lead"
+    }, {
+      "id": "82d6e31a-e859-4683-a564-74c9b1d132c8",
+      "comment": "Dropdown  for selecting Job title",
+      "command": "clickAt",
+      "target": "xpath=/html/body/div[1]/div[1]/div[2]/div[2]/div/div/form/div[1]/div[2]/div/div[2]/div/div[1]/div[2]/i",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ad1db163-0354-49ec-b36c-9b9573cd5f7c",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=/html/body/div[1]/div[1]/div[2]/div[2]/div/div/form/div[1]/div[2]/div/div[2]/div/div/div[1]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0d4fc860-caa9-48dd-9995-627e48f9555a",
+      "comment": "",
+      "command": "select",
+      "target": "xpath=/html/body/div[1]/div[1]/div[2]/div[2]/div/div/form/div[1]/div[2]/div/div[2]/div/div/div[1]",
+      "targets": [],
+      "value": "tabindex=21"
+    }, {
+      "id": "19707e7c-52a3-4df3-9404-9793b81bcf92",
+      "comment": "Select QA Lead",
+      "command": "type",
+      "target": "xpath=/html/body/div[1]/div[1]/div[2]/div[2]/div/div/form/div[1]/div[2]/div/div[2]/div/div[1]/div[1]",
+      "targets": [],
+      "value": "tabindex=20"
+    }, {
+      "id": "59df9888-eca8-47fb-879c-1a66e9bf3f61",
+      "comment": "Hiring Manager",
+      "command": "click",
+      "target": "xpath=/html/body/div[1]/div[1]/div[2]/div[2]/div/div/form/div[3]/div[1]/div/div[2]/div/div/input",
+      "targets": [],
+      "value": "Odis  Adalwin"
+    }, {
+      "id": "379dadd2-bb34-4f9e-85c0-5a5722cc4896",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=/html/body/div[1]/div[1]/div[2]/div[2]/div/div/form/div[3]/div[1]/div/div[2]/div/div/input",
+      "targets": [],
+      "value": "Od"
+    }, {
+      "id": "921a7128-581e-4d24-b85c-a30c2cc6838c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.oxd-autocomplete-text-input > input",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1677764b-0d7e-4df5-b455-a0fc4b928ffa",
+      "comment": "",
+      "command": "type",
+      "target": "css=.oxd-autocomplete-text-input > input",
+      "targets": [],
+      "value": "Odis  Adalwin"
+    }, {
+      "id": "4e29aa4d-a807-4bcd-a041-dc1e0a0d4959",
+      "comment": "",
+      "command": "//click",
+      "target": "xpath=/html/body/div[1]/div[1]/div[2]/div[2]/div/div/form/div[3]/div[1]/div/div[2]/div/div/input",
+      "targets": [],
+      "value": "Odis  Adalwin"
+    }, {
+      "id": "91aec5c8-eeb4-4b07-8273-83ec93d058c5",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=/html/body/div[1]/div[1]/div[2]/div[2]/div/div/form/div[3]/div[2]/div/div/div/div[2]/input",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6d1aede2-9e0a-4393-87f9-0ec5e3c28cae",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=/html/body/div[1]/div[1]/div[2]/div[2]/div/div/form/div[3]/div[2]/div/div/div/div[2]/input",
+      "targets": [],
+      "value": "1"
+    }, {
+      "id": "0387bd5f-cd2d-4a1f-9108-f188f8132f64",
+      "comment": "Save",
+      "command": "click",
+      "target": "xpath=/html/body/div[1]/div[1]/div[2]/div[2]/div/div/form/div[7]/button[2]",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "fe108f5f-876f-4c6a-bfda-3bfcff6d3304",
+    "name": "RecruitmentTab_TC1",
+    "commands": [{
+      "id": "0300d24e-b5fc-49c0-92e3-00596fe624fc",
+      "comment": "",
+      "command": "open",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d61b0076-1184-449f-b48b-b7ee6b5384ec",
+      "comment": "Clicking on Username box",
+      "command": "click",
+      "target": "name=username",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "22ed9043-f018-47e5-a70e-98dc3ed437af",
+      "comment": "Wait",
+      "command": "//waitForElementVisible",
+      "target": "",
+      "targets": [],
+      "value": "60000"
+    }, {
+      "id": "e1b99045-9200-4547-b7ae-14a73e993d7d",
+      "comment": "Typing username",
+      "command": "type",
+      "target": "name=username",
+      "targets": [],
+      "value": "Admin"
+    }, {
+      "id": "b658d9e5-095a-425a-ae4f-66c0b29de892",
+      "comment": "Clicking on password box",
+      "command": "click",
+      "target": "name=password",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8454b18b-02f8-4757-9bfa-50c806308866",
+      "comment": "Typing password",
+      "command": "type",
+      "target": "name=password",
+      "targets": [],
+      "value": "admin123"
+    }, {
+      "id": "a5f30ee4-1549-42f4-a68b-91ae0d9e70b3",
+      "comment": "Clicking on Login button",
+      "command": "click",
+      "target": "xpath=/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2484a14d-9041-423a-b3c6-5375c8434c34",
+      "comment": "Moving on to Recruitment tab",
+      "command": "click",
+      "target": "xpath=/html/body/div[1]/div[1]/div[1]/aside/nav/div[2]/ul/li[5]/a/span",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4872e336-b11a-458e-b924-1ed342df4765",
+      "comment": "Selecting Vacancies tab",
+      "command": "click",
+      "target": "xpath=/html/body/div/div[1]/div[1]/header/div[2]/nav/ul/li[2]/a",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5c96961f-89a9-4e82-b322-756a2e22471b",
+      "comment": "Selecting Payroll Administrator to delete ",
+      "command": "click",
+      "target": "xpath=/html/body/div[1]/div[1]/div[2]/div[2]/div/div[2]/div[3]/div/div[2]/div[3]/div/div[1]/div/div/label/span/i",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2a3437c9-615e-4521-af95-71aa5ebd460a",
+      "comment": "Clicking on delete button",
+      "command": "click",
+      "target": "xpath=/html/body/div[1]/div[1]/div[2]/div[2]/div/div[2]/div[3]/div/div[2]/div[3]/div/div[6]/div/button[1]/i",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a25fd803-f0ba-446c-84cb-6fdc81afb594",
+      "comment": "Selecting Sales Representative",
+      "command": "click",
+      "target": "xpath=/html/body/div[1]/div[1]/div[2]/div[2]/div/div[2]/div[3]/div/div[2]/div[4]/div/div[1]/div/div/label/span/i",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a7d8034d-2f26-45b1-9e8c-df681354b658",
+      "comment": "Selecting Junior Account Assistant",
+      "command": "click",
+      "target": "xpath=/html/body/div[1]/div[1]/div[2]/div[2]/div/div[2]/div[3]/div/div[2]/div[2]/div/div[1]/div/div/label/span/i",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "98ee8617-282e-45cc-ac0e-4936d3ddebc2",
+      "comment": "Deleting the selected vacancies",
+      "command": "click",
+      "target": "xpath=/html/body/div[1]/div[1]/div[2]/div[2]/div/div[2]/div[2]/div/div/button",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a0fef71f-5fbd-4a89-9e5d-4c9da011038e",
+      "comment": "Selecting vacancy of Senior QA Lead to edit ",
+      "command": "click",
+      "target": "xpath=/html/body/div[1]/div[1]/div[2]/div[2]/div/div[2]/div[2]/div/div/button",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e5cfe426-b974-4389-b343-c9c2e3869c42",
+      "comment": "Clicking on edit button",
+      "command": "click",
+      "target": "xpath=/html/body/div[1]/div[1]/div[2]/div[2]/div/div[2]/div[3]/div/div[2]/div[5]/div/div[6]/div/button[2]/i",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4db265b3-d45c-4906-86a0-ae7f01ed5f7a",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=/html/body/div/div[1]/div[2]/div[2]/div/div[1]/form/div[1]/div[1]/div/div[2]/input",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "500e41b6-5aa0-481b-9540-62af0248f4fc",
+      "comment": "cleraing the field",
+      "command": "type",
+      "target": "xpath=/html/body/div/div[1]/div[2]/div[2]/div/div[1]/form/div[1]/div[1]/div/div[2]/input",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "533cb54e-6997-4286-88b7-b012ace19f16",
+      "comment": "Giving vacancy name as QA Lead",
+      "command": "type",
+      "target": "xpath=/html/body/div/div[1]/div[2]/div[2]/div/div[1]/form/div[1]/div[1]/div/div[2]/input",
+      "targets": [],
+      "value": "QA  Lead"
+    }, {
+      "id": "9657744c-6c76-404d-ba72-544082769409",
+      "comment": "Clicking on dropdown to select job title",
+      "command": "click",
+      "target": "xpath=/html/body/div/div[1]/div[2]/div[2]/div/div[1]/form/div[1]/div[2]/div/div[2]/div/div/div[2]/i",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "009dfe5c-ae37-4614-9a80-319f8ade9ab3",
+      "comment": "Selecting QA Engineer",
+      "command": "click",
+      "target": "xpath=/html/body/div/div[1]/div[2]/div[2]/div/div[1]/form/div[1]/div[2]/div/div[2]/div/div/div[2]/i",
+      "targets": [],
+      "value": "tabindex=16"
+    }, {
+      "id": "f5cf75ba-401c-417f-bf2d-7c0b874b7db1",
+      "comment": "Clicking dropdown to change the selected job title",
+      "command": "click",
+      "target": "xpath=/html/body/div/div[1]/div[2]/div[2]/div/div[1]/form/div[1]/div[2]/div/div[2]/div/div/div[2]/i",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7343e768-b35a-4752-bb9b-037f78eae50f",
+      "comment": "Selecting QA Lead",
+      "command": "click",
+      "target": "xpath=/html/body/div/div[1]/div[2]/div[2]/div/div[1]/form/div[1]/div[2]/div/div[2]/div/div/div[2]/i",
+      "targets": [],
+      "value": "tabindex=17"
+    }, {
+      "id": "6f61f42a-0129-490e-8303-12ff38ce96fa",
+      "comment": "Selecting description tab to give vacancy description",
+      "command": "click",
+      "target": "xpath=/html/body/div/div[1]/div[2]/div[2]/div/div[1]/form/div[2]/div/div/div[2]/textarea",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6bec54b8-786c-45f4-8446-647d0c001266",
+      "comment": "Giving a brief of the vacancy",
+      "command": "type",
+      "target": "xpath=/html/body/div/div[1]/div[2]/div[2]/div/div[1]/form/div[2]/div/div/div[2]/textarea",
+      "targets": [],
+      "value": "Dynamic individuals with 4-6 years of experience and proficient in Test automation tools"
+    }, {
+      "id": "06fefdb7-7cb9-4b2b-890e-c68282d91b3a",
+      "comment": "Clicking on Hiring manager option",
+      "command": "click",
+      "target": "xpath=/html/body/div/div[1]/div[2]/div[2]/div/div[1]/form/div[3]/div[1]/div/div[2]/div/div/input",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7b3978d2-a943-4bd6-afbd-babdbe70ec3f",
+      "comment": "Clearing the existing hiring manager",
+      "command": "type",
+      "target": "xpath=/html/body/div/div[1]/div[2]/div[2]/div/div[1]/form/div[3]/div[1]/div/div[2]/div/div/input",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "accc5dc9-2ab1-437f-97fd-cc562512625b",
+      "comment": "Typing L to get hints to select Linda Jane Anderson",
+      "command": "type",
+      "target": "xpath=/html/body/div/div[1]/div[2]/div[2]/div/div[1]/form/div[3]/div[1]/div/div[2]/div/div/input",
+      "targets": [],
+      "value": "Linda Jane Anderson"
+    }, {
+      "id": "83384134-2f62-4394-8826-044618051ae4",
+      "comment": "Selecting Linda Jane Anderson",
+      "command": "//clickAt",
+      "target": "xpath=/html/body/div/div[1]/div[2]/div[2]/div/div[1]/form/div[3]/div[1]/div/div[2]/div/div/input",
+      "targets": [],
+      "value": "-10,-10"
+    }, {
+      "id": "9c9d671f-359e-485a-9bd8-9cc623fc75f7",
+      "comment": "Saving the vacancy",
+      "command": "click",
+      "target": "xpath=/html/body/div/div[1]/div[2]/div[2]/div/div[1]/form/div[7]/button[2]",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "f3c2925b-29e3-451d-8268-363a78ece1ca",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["97b75884-2c9c-49de-87cc-202d6df79819"]
+  }],
+  "urls": ["https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"],
+  "plugins": []
+}
